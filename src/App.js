@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          Test the hot reload using volumes - I was changed on the Feature branch
+          Testing the hot reload using volumes
         </p>
       </div>
     );
