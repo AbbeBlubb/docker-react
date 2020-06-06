@@ -11,11 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-<<<<<<< HEAD
-          I was changed on the Feature branch
-=======
-          HEJ1! I was changed on the Feature branch
->>>>>>> ea101ae6262ac0e6842c643d1db9f532fed254f6
+          Test the hot reload using volumes - I was changed on the Feature branch
         </p>
       </div>
     );
