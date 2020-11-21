@@ -1,3 +1,4 @@
+# Docker & React
 
 ## Dockerfile.dev
 - Template for copying the project
