@@ -2,6 +2,10 @@
 
 https://mherman.org/blog/dockerizing-a-react-app/
 
+
+
+## Without docker-compose
+
 ### Build
 ```
 - docker build -t experimental:volumes .
