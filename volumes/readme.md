@@ -8,7 +8,7 @@ https://mherman.org/blog/dockerizing-a-react-app/
 
 ### Build
 ```
-- docker build -t experimental:volumes .
+docker build -t experimental:volumes .
 ```
 
 ### Run
