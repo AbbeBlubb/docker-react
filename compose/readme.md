@@ -1,6 +1,6 @@
 # docker-compose
 
-## Build
+## Build & tag image
 ```
 docker build -t experimental:volumes .
 ```
