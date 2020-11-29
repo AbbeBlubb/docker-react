@@ -1,7 +1,10 @@
 version: "3.8"
 services:
   client:
-    image: experimental:compose
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      # > Successfully tagged compose-volumes_client:latest
     restart: on-failure
     ports:
       - "3001:3000"

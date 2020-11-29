@@ -1,0 +1,64 @@
+Creating network "compose-volumes_default" with the default driver
+Building client
+Step 1/7 : FROM node:alpine
+alpine: Pulling from library/node
+cbdbe7a5bc2a: Pull complete
+ff58111d4af4: Pull complete
+970287dc52e6: Pull complete
+bdd79cdf01b3: Pull complete
+Digest: sha256:c63b6ebe5b1a4f33d826d1c14fedea7a6f12e8276c3871e149554f82bb2db93c
+Status: Downloaded newer image for node:alpine
+ ---> 1e55b2e48c8e
+Step 2/7 : WORKDIR /app
+ ---> Running in 76f333ab5f51
+Removing intermediate container 76f333ab5f51
+ ---> 0050718792dd
+Step 3/7 : COPY package.json ./
+ ---> e1c8f2dc7ce0
+Step 4/7 : COPY package-lock.json ./
+ ---> bf9db1f4ebc6
+Step 5/7 : RUN npm install
+ ---> Running in 722b60d2d8a2
+
+added 1958 packages, and audited 1958 packages in 51s
+
+found 0 vulnerabilities
+npm notice 
+npm notice New patch version of npm available! 7.0.14 -> 7.0.15
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v7.0.15>
+npm notice Run `npm install -g npm@7.0.15` to update!
+npm notice 
+Removing intermediate container 722b60d2d8a2
+ ---> f0e830e9fae3
+Step 6/7 : COPY . ./
+ ---> e7f2ec5b8abd
+Step 7/7 : CMD ["npm", "start"]
+ ---> Running in af8fb44b16b5
+Removing intermediate container af8fb44b16b5
+ ---> 9c02ca717bc4
+
+Successfully built 9c02ca717bc4
+Successfully tagged compose-volumes_client:latest
+WARNING: Image for service client was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating compose-volumes_client_1 ... done
+Attaching to compose-volumes_client_1
+client_1  | 
+client_1  | > compose@0.1.0 start
+client_1  | > react-scripts start
+client_1  | 
+client_1  | ℹ ｢wds｣: Project is running at http://172.20.0.2/
+client_1  | ℹ ｢wds｣: webpack output is served from 
+client_1  | ℹ ｢wds｣: Content not from webpack is served from /app/public
+client_1  | ℹ ｢wds｣: 404s will fallback to /
+client_1  | Starting the development server...
+client_1  | 
+client_1  | Compiled successfully!
+client_1  | 
+client_1  | You can now view compose in the browser.
+client_1  | 
+client_1  |   Local:            http://localhost:3000
+client_1  |   On Your Network:  http://172.20.0.2:3000
+client_1  | 
+client_1  | Note that the development build is not optimized.
+client_1  | To create a production build, use npm run build.
+client_1  | 
